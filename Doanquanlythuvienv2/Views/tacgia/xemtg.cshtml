@@ -1,0 +1,44 @@
+﻿@model Doanquanlythuvienv2.Models.TACGIA
+
+@{
+    ViewBag.Title = "xemtg";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+
+<div>
+    <h4>TACGIA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaTacGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaTacGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTacGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTacGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SACH.TenSach)
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.SACH.TenSach)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Formsuatacgia", new {id = Model.MaTacGia }) |
+    @Html.ActionLink("Back to List", "IndexTG")
+</p>
